@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+
+  padding: 10px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+
+  margin: auto;
+  margin-top: 85px;
+
+  min-height: 200px;
+  transition: All 100ms linear;
+}
+
+.grid {
+  height: 100%;
+}
+
+.containerTitle {
+  margin: 1em;
+}
+
+@media only screen and (min-width: 920px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
+  .container {
+    padding: 60px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .container {
+    width: 1000px;
+  }
+  .vanilla {
+    background-color: var(--forground-color);
+    box-shadow: 3px 0px 5px -3px var(--text-color),
+      -3px 0px 5px -3px var(--text-color);
+    width: 1000px;
+  }
+}

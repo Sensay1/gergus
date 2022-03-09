@@ -1,0 +1,26 @@
+.scroll {
+  position: absolute;
+  width: 100px;
+
+  left: calc(50% - 50px);
+  fill: var(--text-color);
+
+  transition: bottom 0.2s linear;
+  animation: MoveUpDown 0.9s linear infinite;
+
+  bottom: 10px;
+}
+
+.scroll:hover {
+  bottom: 17px;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}

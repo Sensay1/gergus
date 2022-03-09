@@ -1,0 +1,39 @@
+.timeline {
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  h3 {
+    text-align: left;
+    margin-bottom: 0.4em;
+  }
+}
+
+.timelineO {
+  transform: translateY(-2.9em);
+  margin-left: -1.2em;
+  height: 2.5em;
+  stroke: var(--accent-color);
+}
+
+.timelineI {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--accent-color) 0px,
+    var(--accent-color) 0.5em,
+    transparent 0.5em,
+    transparent 1em
+  );
+  background-repeat: repeat-y;
+
+  width: 0.15em;
+  min-height: 5em;
+
+  margin-left: 1.25em;
+  margin-bottom: 0.2em;
+  margin-top: 3.45em;
+}
+
+.timelineText {
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+  text-align: left;
+}

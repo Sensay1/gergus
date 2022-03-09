@@ -1,0 +1,65 @@
+:root {
+  font-size: 16px;
+  --backround-color: #faf9f6;
+  --forground-color: #ffffff;
+  --accent-color: #47a0f8; /*#5643fd; /*#0c164f;*/
+  --text-color: #444444;
+
+  --link-color: #5643fd;
+  --titlecard-width: 55em;
+}
+
+@font-face {
+  font-family: "JetBrains";
+  src: local("JetBrains"),
+    url(./resources/webfonts/JetBrainsMono-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Bold";
+  src: local("JetBrains"),
+    url(./resources/webfonts/JetBrainsMono-ExtraBold.woff2) format("woff2");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--backround-color);
+  font-family: "JetBrains", "Calibre", "Inter", "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, sans-serif;
+  color: var(--text-color);
+
+  overflow-x: hidden;
+
+  ::selection {
+    background: #a3fcff;
+  }
+}
+
+h1 {
+  font-family: "JetBrains Bold", "Calibre", "Inter", "San Francisco",
+    "SF Pro Text", -apple-system, system-ui, sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 0.1em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: "JetBrains", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    font-size: 18px;
+  }
+}
