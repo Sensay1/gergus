@@ -25,6 +25,14 @@
   }
 }
 
+.textImage {
+  margin: 1%;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
 .links {
   padding: 2%;
   padding-left: 10%;
@@ -84,6 +92,15 @@
 @media only screen and (min-width: 600px) {
   .links a {
     font-size: 1.9em;
+  }
+
+  .textImage {
+    margin: 0;
+    float: right;
+    margin-left: 1em;
+    img {
+      max-width: 375px;
+    }
   }
 }
 

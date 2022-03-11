@@ -24,7 +24,7 @@ export const TimelineAtricle = ({ time, title, text, linkName, linkHref }) => (
         viewBox="0 0 30 30"
       >
         <ellipse
-          stroke-width="2"
+          strokeWidth="2"
           ry="14"
           rx="14"
           id="svg_1"

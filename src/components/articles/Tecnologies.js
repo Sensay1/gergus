@@ -25,7 +25,7 @@ export const Tecnologies = () => (
                     <p>Apollo Server</p>
                 </li>
                 <li>
-                    <p>GQL</p>
+                    <p>Firebase</p>
                 </li>
                 <li>
                     <p>REST</p>

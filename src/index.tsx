@@ -42,7 +42,7 @@ ReactDOM.render(
     <Container title="Built drones" scroll={false} doc3={<Drone />} />
     <Container title="Built a campervan" scroll={false} doc3={<Campervan />} />
     <Container
-      title="Made a removable OS usb"
+      title="Built a removable Arch-OS"
       scroll={false}
       doc3={<ArchUSB />}
     />
@@ -51,6 +51,12 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+//Comment out for debugging!
+window.onerror = function (message, url, lineNumber) {
+  // code to execute on an error
+  return true; // prevents browser error messages
+};
 
 //For scrolls on page
 $(".containerScroll").click(function (clicked_id) {

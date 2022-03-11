@@ -25,6 +25,9 @@ export const Languages = () => (
                     <p>JavaScript/TypeScript</p>
                 </li>
                 <li>
+                    <p>SQL</p>
+                </li>
+                <li>
                     <p>G-code</p>
                 </li>
                 <li>

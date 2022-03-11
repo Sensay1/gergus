@@ -5,7 +5,7 @@ import gitHub from '../../resources/svg/gitHub.svg'
 import mail from '../../resources/svg/mail.svg'
 
 export const AboutMe = () => (
-    <div class="textBox">
+    <div className="textBox">
         <p>
             I am an especially curious person with a variety of interests. I have built drones, bult a campervan, been a climbing instructor, lived in a van, learnt how to weld, been a mechanic, studied material sciences, now working as an IT consultant, but most importantly I build software.
         </p>
