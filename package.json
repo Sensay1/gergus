@@ -10,6 +10,8 @@
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.13",
+    "firebase": "^9.6.8",
+    "firebase-tools": "^10.2.2",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

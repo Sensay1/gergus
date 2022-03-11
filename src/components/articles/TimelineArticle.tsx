@@ -37,7 +37,8 @@ export const TimelineAtricle = ({ time, title, text, linkName, linkHref }) => (
     </div>
     <div>
       <h3>
-        {time} - {title}
+        {time} <br />
+        {title}
       </h3>
       <div className="timelineText">
         <p>{text}</p>

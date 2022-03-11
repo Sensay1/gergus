@@ -15,6 +15,8 @@ import Tecnologies from "./components/articles/Tecnologies";
 import TecText from "./components/articles/TecText";
 import { Divider } from "./components/atoms/Divider.js";
 import Campervan from "./components/articles/Campervan.js";
+import Drone from "./components/articles/Drone.js";
+import ArchUSB from "./components/articles/ArchUSB.js";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -31,15 +33,19 @@ ReactDOM.render(
       doc1={<Tecnologies />}
       doc2={<Languages />}
       doc3={<TecText />}
+      type="noStyle"
     />
     <Container title="Timeline" type="noStyle" doc3={<Timeline />} />
 
     <h1>Projects:</h1>
     <Divider />
-    <Container title="Bulit a drone" scroll={false} />
-    <Container title="Built a campervan" scroll={false} doc1={<Campervan />} />
-    <Container title="Built a removable linux OS" scroll={false} />
-    <Container title="Cofounder of duckmouse.no" scroll={false} />
+    <Container title="Built drones" scroll={false} doc3={<Drone />} />
+    <Container title="Built a campervan" scroll={false} doc3={<Campervan />} />
+    <Container
+      title="Made a removable OS usb"
+      scroll={false}
+      doc3={<ArchUSB />}
+    />
 
     <Footer title="gergus.no - 2022" />
   </React.StrictMode>,

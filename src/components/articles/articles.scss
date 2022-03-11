@@ -26,21 +26,20 @@
 }
 
 .links {
-  padding: 0;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  li {
-    list-style: none;
+  a {
     margin: 2%;
-    a {
-      font-size: 5vw;
-      img {
-        height: 1.1em;
-        vertical-align: -0.1em;
-        margin-right: 0.2em;
-      }
+    font-size: 5vw;
+    text-align: center;
+    img {
+      height: 1.1em;
+      vertical-align: -0.1em;
+      margin-right: 0.2em;
     }
   }
 }
@@ -51,6 +50,7 @@
   ul {
     margin: 0;
     li {
+      color: var(--accent-color);
       margin-bottom: 0.5em;
     }
   }
@@ -81,7 +81,13 @@
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 600px) {
+  .links a {
+    font-size: 1.9em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
   .textBox {
     padding: 40px;
     padding-top: 0;
@@ -91,9 +97,11 @@
   }
   .links {
     padding: 40px;
+    display: flex;
     flex-direction: column;
-    li a {
+    a {
       font-size: 1.9em;
+      text-align: left;
     }
   }
 }
