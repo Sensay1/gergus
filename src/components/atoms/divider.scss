@@ -2,19 +2,12 @@
   margin: auto;
   width: 90%;
   height: 1px;
-  background-color: transparent;
 
-  /*filter: drop-shadow(0px -1px 0.3px var(--text-color));*/
-}
-
-@media only screen and (min-width: 1000px) {
-  .divider {
-    background-image: linear-gradient(
-      to left,
-      transparent,
-      var(--text-color),
-      var(--text-color),
-      transparent
-    );
-  }
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    var(--text-color),
+    var(--text-color),
+    transparent
+  );
 }

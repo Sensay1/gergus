@@ -13,10 +13,10 @@ import Links from "./components/articles/Links.js";
 import Languages from "./components/articles/Languages";
 import Tecnologies from "./components/articles/Tecnologies";
 import TecText from "./components/articles/TecText";
-import { Divider } from "./components/atoms/Divider.js";
 import Campervan from "./components/articles/Campervan.js";
 import Drone from "./components/articles/Drone.js";
 import ArchUSB from "./components/articles/ArchUSB.js";
+import Diamond from "./components/atoms/Diamond.js";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -37,10 +37,10 @@ ReactDOM.render(
     />
     <Container title="Timeline" type="noStyle" doc3={<Timeline />} />
 
-    <h1>Projects:</h1>
-    <Divider />
-    <Container title="Built drones" scroll={false} doc3={<Drone />} />
-    <Container title="Built a campervan" scroll={false} doc3={<Campervan />} />
+    <Diamond text="Projects:" />
+
+    <Container title="Built drones" doc3={<Drone />} />
+    <Container title="Built a campervan" doc3={<Campervan />} />
     <Container
       title="Built a removable Arch-OS"
       scroll={false}

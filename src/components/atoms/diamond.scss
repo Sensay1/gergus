@@ -1,0 +1,49 @@
+.diamondContainer {
+  overflow-x: hidden;
+
+  width: 100%;
+
+  padding-bottom: 2em;
+}
+
+.diamond {
+  --titlecard-width: 40em;
+
+  width: var(--titlecard-width);
+  margin-left: calc(50% - var(--titlecard-width) / 2);
+
+  filter: drop-shadow(0px 0px 14px rgb(0 0 0 / 0.4));
+
+  h1 {
+    text-align: center;
+
+    margin: 0;
+    transform: translateY(2.6em);
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+
+  .top {
+    width: 1px;
+    height: 0;
+
+    border-bottom: calc(var(--titlecard-width) / 10) solid
+      var(--forground-color);
+
+    border-left: calc(var(--titlecard-width) / 2) solid transparent;
+    border-right: calc(var(--titlecard-width) / 2) solid transparent;
+  }
+}
+
+.bottom {
+  width: 1px;
+  height: 0;
+
+  border-top: calc(var(--titlecard-width) / 10) solid var(--forground-color);
+
+  border-left: calc(var(--titlecard-width) / 2) solid transparent;
+  border-right: calc(var(--titlecard-width) / 2) solid transparent;
+}

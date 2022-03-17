@@ -1,86 +1,24 @@
-#Title {
-  text-align: center;
-  width: var(--titlecard-width);
-
-  margin: 0;
-  padding-top: 0;
-  margin-left: calc(var(--titlecard-width) / -2);
-  transform: translateY(-1em);
-
-  color: var(--accent-color);
-
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-
-.titleBoxText {
-  color: white;
-  margin: 15px;
-  text-align: center;
-  font-size: 1.6em;
-
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-
-#titlecard {
-  width: 0;
-  margin-left: calc(50% - var(--titlecard-width) / 2);
-  margin-top: 200px;
-
-  filter: drop-shadow(0px 0px 14px rgb(0 0 0 / 0.4));
-}
-
-#top {
-  width: 1px;
-  height: 0;
-
-  border-bottom: none;
-
-  border-left: calc(var(--titlecard-width) / 2) solid transparent;
-  border-right: calc(var(--titlecard-width) / 2) solid transparent;
-}
-
-#bottom {
-  width: 1px;
-  height: 0;
-
-  border-top: none;
-
-  border-left: calc(var(--titlecard-width) / 2) solid transparent;
-  border-right: calc(var(--titlecard-width) / 2) solid transparent;
-}
-
-#burger {
-  width: var(--titlecard-width);
-  height: 1px;
-
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 1000px) {
-  #top {
-    border-bottom: calc(var(--titlecard-width) / 10) solid
-      var(--forground-color);
-  }
-  #bottom {
-    border-top: calc(var(--titlecard-width) / 10) solid var(--forground-color);
-  }
-  #burger {
-    background-color: var(--forground-color);
-  }
-  .titleBoxText {
-    color: var(--text-color);
-  }
+#TitleBox {
   #Title {
-    transform: translateY(0);
-    padding-top: 1.4em;
+    text-align: center;
+    color: var(--accent-color);
+    margin: 0;
+    margin-top: calc(40vh - 1.3em);
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
   }
-  #titlecard {
-    margin-top: calc(50vh - var(--titlecard-width) / 10);
+
+  #UnderTitle {
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
   }
 }

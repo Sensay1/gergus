@@ -43,15 +43,9 @@ export const TitleBox = () => {
   });
 
   return (
-    <div id="titlecard">
-      <div id="top">
-        <h1 id="Title">gergus.no_</h1>{" "}
-      </div>
-      <div id="burger">
-        <Divider />
-        <p className="titleBoxText">I like to code stuff</p>
-      </div>
-      <div id="bottom"></div>
+    <div id="TitleBox">
+      <h1 id="Title">gergus.no_</h1>{" "}
+      <p id="UnderTitle">I like to code stuff</p>
     </div>
   );
 };
