@@ -9,16 +9,29 @@ export const Container = ({
   doc2 = <></>,
   doc3 = <></>,
   type = "vanilla",
+  scroll = true,
 }) => {
-  return (
-    <div className={"container " + type}>
-      <h1 className="containerTitle">{title}</h1>
-      <div className="grid">
-        {doc1}
-        {doc2}
+  if (scroll)
+    return (
+      <div className={"container " + type}>
+        <h1 className="containerTitle">{title}</h1>
+        <div className="grid">
+          {doc1}
+          {doc2}
+        </div>
+        {doc3}
+        <Scroll />
       </div>
-      {doc3}
-      <Scroll />
-    </div>
-  );
+    );
+  else
+    return (
+      <div className={"container " + type}>
+        <h1 className="containerTitle">{title}</h1>
+        <div className="grid">
+          {doc1}
+          {doc2}
+        </div>
+        {doc3}
+      </div>
+    );
 };

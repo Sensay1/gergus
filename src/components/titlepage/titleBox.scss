@@ -21,4 +21,36 @@
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
   }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 20em;
+    height: 2px;
+
+    margin-top: 4em;
+    margin-left: calc(50% - 10em);
+
+    background: #ffffff;
+    outline: none;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
 }

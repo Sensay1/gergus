@@ -46,6 +46,7 @@ export const TitleBox = () => {
     <div id="TitleBox">
       <h1 id="Title">gergus.no_</h1>{" "}
       <p id="UnderTitle">I like to code stuff</p>
+      <input type="range" min="0" max="1000" defaultValue="500" className="slider" id="myRange"></input>
     </div>
   );
 };

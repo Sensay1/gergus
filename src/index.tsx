@@ -39,8 +39,8 @@ ReactDOM.render(
 
     <Diamond text="Projects:" />
 
-    <Container title="Built drones" doc3={<Drone />} />
-    <Container title="Built a campervan" doc3={<Campervan />} />
+    <Container scroll={false} title="Built drones" doc3={<Drone />} />
+    <Container scroll={false} title="Built a campervan" doc3={<Campervan />} />
     <Container
       title="Built a removable Arch-OS"
       scroll={false}

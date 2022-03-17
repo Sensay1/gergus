@@ -22,6 +22,7 @@ export const Canvas = () => {
         let shootingStars = []
         //star array:
         let stars = []
+        let sliderValue = 500;
 
         //Utillity functions:
         function getRandomInt(min, max) {
@@ -97,8 +98,8 @@ export const Canvas = () => {
                 this.changespeed = getRandomInt(1, 20)
 
                 this.transform = function () {
-                    this.x = this.x + 0.08;
-                    this.y = this.y + 0.04;
+                    this.x = this.x + 0.04;
+                    this.y = this.y + 0.02;
 
                     if (this.realBright > this.brightness)
                         this.direction = -1;
@@ -144,7 +145,9 @@ export const Canvas = () => {
             }
 
             //limiting number of stars:
-            for (let i = 0; i < (canvas.width * canvas.height / 1500); i++) {
+            sliderValue = $('#myRange').val();
+            const numStars = ((canvas.width * canvas.height / 1000000) * sliderValue);
+            for (let i = 0; i < numStars; i++) {
                 if (i < stars.length) {
                     if (stars[i].y > (3 * canvas.height / 4) || stars[i].x > canvas.width) {
                         stars.splice(i, 1);
@@ -152,10 +155,16 @@ export const Canvas = () => {
                 }
                 else
                     stars.push(new star());
+
+
                 stars[i].transform();
                 stars[i].draw();
             }
-            stars.splice(0, 1);
+            stars.splice(numStars + 1, 9e9);
+            console.log(stars.length);
+            console.log(numStars);
+
+            //stars.splice(0, 1);
         }
 
         const newShootingStar = (xC, yC) => {
