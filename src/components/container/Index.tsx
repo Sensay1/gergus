@@ -4,7 +4,7 @@ import "./index.scss";
 import { Divider } from "../atoms/Divider";
 
 export const Container = ({
-  title,
+  title = "",
   doc1 = <></>,
   doc2 = <></>,
   doc3 = <></>,

@@ -1,5 +1,5 @@
 import React from "react";
-import TimelineAtricle from "./TimelineArticle.tsx";
+import TimelineAtricle from "./TimelineArticle";
 
 export const Timeline = () => (
   <div className="textBox">

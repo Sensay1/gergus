@@ -4,8 +4,8 @@ import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { Footer } from "./components/footer/Index.js";
 import { Titlepage } from "./components/titlepage/Index.js";
-import { Container } from "./components/container/Index.tsx";
-import Timeline from "./components/articles/Timeline.tsx";
+import { Container } from "./components/container/Index";
+import Timeline from "./components/articles/Timeline";
 import $ from "jquery";
 import AboutMe from "./components/articles/AboutMe.js";
 import MeImg from "./components/articles/MeImg.js";
@@ -60,13 +60,15 @@ window.onerror = function (message, url, lineNumber) {
 
 //For scrolls on page
 $(".containerScroll").click(function (clicked_id) {
-  $("html,body").animate(
-    {
-      scrollTop:
-        $(this.parentElement).offset().top + this.parentElement.clientHeight,
-    },
-    "slow"
-  );
+  if (this.parentElement != null) {
+    const type: any = $(this.parentElement).offset();
+    $("html,body").animate(
+      {
+        scrollTop: type.top + this.parentElement.clientHeight,
+      },
+      "slow"
+    );
+  }
 });
 
 // If you want to start measuring performance in your app, pass a function

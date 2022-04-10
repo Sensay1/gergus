@@ -1,8 +1,5 @@
 import React from "react";
 import "./timeline.scss";
-import linkedIn from "../../resources/svg/linkedIn.svg";
-import gitHub from "../../resources/svg/gitHub.svg";
-import mail from "../../resources/svg/mail.svg";
 
 interface TimelineArticleProps {
   time: string;
@@ -12,7 +9,7 @@ interface TimelineArticleProps {
   linkHref?: string;
 }
 
-export const TimelineAtricle = ({ time, title, text, linkName, linkHref }) => (
+export const TimelineAtricle: React.FC<TimelineArticleProps> = (props) => (
   <div className="timeline">
     <div className="timelineI">
       <svg
@@ -37,13 +34,13 @@ export const TimelineAtricle = ({ time, title, text, linkName, linkHref }) => (
     </div>
     <div>
       <h3>
-        {time} <br />
-        {title}
+        {props.time} <br />
+        {props.title}
       </h3>
       <div className="timelineText">
-        <p>{text}</p>
-        <a className="underline" href={linkHref}>
-          {linkName}
+        <p>{props.text}</p>
+        <a className="underline" href={props.linkHref}>
+          {props.linkName}
         </a>
       </div>
     </div>

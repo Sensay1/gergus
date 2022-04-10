@@ -98,8 +98,8 @@ export const Canvas = () => {
                 this.changespeed = getRandomInt(1, 20)
 
                 this.transform = function () {
-                    this.x = this.x + 0.04;
-                    this.y = this.y + 0.02;
+                    //this.x = this.x + 0.04;
+                    //this.y = this.y + 0.02;
 
                     if (this.realBright > this.brightness)
                         this.direction = -1;
