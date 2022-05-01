@@ -1,6 +1,5 @@
 import { React, useEffect } from "react";
 import "./titleBox.scss";
-import { Divider } from "../atoms/Divider";
 import $ from 'jquery';
 
 let title;

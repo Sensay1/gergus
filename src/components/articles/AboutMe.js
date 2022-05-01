@@ -1,8 +1,5 @@
 import React from 'react';
 import './articles.scss';
-import linkedIn from '../../resources/svg/linkedIn.svg'
-import gitHub from '../../resources/svg/gitHub.svg'
-import mail from '../../resources/svg/mail.svg'
 
 export const AboutMe = () => (
     <div className="textBox">

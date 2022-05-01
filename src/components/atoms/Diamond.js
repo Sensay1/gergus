@@ -1,6 +1,5 @@
 import { React, useEffect } from "react";
 import "./diamond.scss";
-import { Divider } from "./Divider";
 
 export const Diamond = ({ text = "" }) => (
     <div className="diamondContainer">

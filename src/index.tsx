@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import reportWebVitals from "./reportWebVitals";
 import { Footer } from "./components/footer/Index.js";
 import { Titlepage } from "./components/titlepage/Index.js";
 import { Container } from "./components/container/Index";

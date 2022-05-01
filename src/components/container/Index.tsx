@@ -1,7 +1,6 @@
 import React from "react";
 import { Scroll } from "../atoms/Scroll.js";
 import "./index.scss";
-import { Divider } from "../atoms/Divider";
 
 export const Container = ({
   title = "",

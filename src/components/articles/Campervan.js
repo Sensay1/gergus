@@ -1,8 +1,6 @@
 import React from 'react';
 import './articles.scss';
-import { Text } from "react";
 import van1 from './../../resources/img/van1.jpg';
-import van2 from './../../resources/img/van2.jpg';
 
 
 export const Campervan = () => (
